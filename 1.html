@@ -1,168 +1,115 @@
-/* 基本樣式 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青少年AI智能輔導網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            width: 100%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>青少年AI智能輔導網站</h1>
+        <nav>
+            <a href="#home">主頁</a>
+            <a href="#about">關於我們</a>
+            <a href="#services">AI輔導服務</a>
+            <a href="#resources">資源中心</a>
+            <a href="#contact">聯繫我們</a>
+        </nav>
+    </header>
 
-header {
-    background-color: #4CAF50;
-    padding: 10px;
-    color: white;
-}
+    <div class="container">
+        <section id="home">
+            <div class="card">
+                <h2>歡迎來到青少年AI智能輔導網站</h2>
+                <p>我們致力於提供專業的輔導與學習資源，幫助青少年在學習和心理健康上獲得支持。</p>
+            </div>
+        </section>
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
+        <section id="about">
+            <div class="card">
+                <h3>關於我們</h3>
+                <p>我們的使命是透過AI技術為青少年提供個性化的輔導和學習支援，幫助他們提升自我認識與學習成果。</p>
+            </div>
+        </section>
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
+        <section id="services">
+            <div class="card">
+                <h3>AI輔導服務</h3>
+                <ul>
+                    <li>個性化輔導與學習計劃</li>
+                    <li>心理測評與情緒追蹤</li>
+                    <li>互動學習遊戲和練習</li>
+                </ul>
+            </div>
+        </section>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
+        <section id="resources">
+            <div class="card">
+                <h3>資源中心</h3>
+                <p>提供青少年相關的學習資源、文章、視頻和專家建議，幫助他們在學習和心理健康上取得成就。</p>
+            </div>
+        </section>
 
-/* 主頁面 */
-.hero {
-    background-color: #f1f1f1;
-    padding: 60px 20px;
-    text-align: center;
-}
+        <section id="contact">
+            <div class="card">
+                <h3>聯繫我們</h3>
+                <p>我們樂意聽取您的意見和建議，請聯繫我們：<br>電子郵件：info@ai-counseling.tw</p>
+            </div>
+        </section>
+    </div>
 
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.cta-btn {
-    background-color: #4CAF50;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* 功能介紹 */
-#features {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#features h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.feature {
-    margin-bottom: 40px;
-}
-
-.feature h3 {
-    font-size: 24px;
-    color: #333;
-}
-
-.feature p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* 學習資源 */
-#resources {
-    padding: 50px 20px;
-}
-
-#resources h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.resource {
-    margin-bottom: 40px;
-}
-
-.resource h3 {
-    font-size: 24px;
-    color: #333;
-}
-
-.resource p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* 社群交流區 */
-#community {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#contact {
-    padding: 50px 20px;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#contact label {
-    margin: 10px 0 5px;
-}
-
-#contact input, #contact textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
+    <footer>
+        <p>&copy; 2024 青少年AI智能輔導網站. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
